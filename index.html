@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>smarty kindergarten</title>
+    <!-- daisy ui  cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a55bd9149b.js" crossorigin="anonymous"></script>
+    <!--  -->
+  </head>
+  <body>
+    <header class="bg-orange-500">
+      <nav class="container mx-auto text-white">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+              <li><a>About Us</a></li>
+              <li><a>Programs</a></li>
+              <li><a>Classes</a></li>
+              <li><a>News</a></li>
+              <li><a>Events</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Contacts</a></li>
+              </ul>
+            </div>
+            <a class="hover:text-black text-sm md:text-2xl"
+              >Smart kindergarten</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>About Us</a></li>
+              <li><a>Programs</a></li>
+              <li><a>Classes</a></li>
+              <li><a>News</a></li>
+              <li><a>Events</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Contacts</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-4">
+            <a class="hover:bg-orange-500"> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <i class="fa-solid fa-cart-shopping "></i>
+          </div>
+        </div>
+      </nav>
+      <!-- nav banner -->
+       <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center container mx-auto gap-4 md:gap-24">
+        <!-- text section -->
+         <div class="space-y-4 mx-12 my-12 text-white">
+           <h2 class="text-xl  font-bold"> When should I begin to look at schools?</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam commodi in fugit repellendus, dignissimos numquam obcaecati, maiores cumque tempora odio aliquam quo veniam asperiores labore sit aut dolore. Excepturi.</p>
+           <button class="btn bg-blue-600 text-white"> Learn more </button>
+         </div>
+         <!-- images section -->
+          <div class="my-12">
+            <img class="w-[450px] h-[300px] md:h-[400px]" src="images/slide_img.png" alt="">
+          </div>
+        
+       </div>
+    </header>
+    <!-- main section -->
+    <main class="container mx-auto">
+        <!-- smart programs -->
+         <section class="my-24">
+                <h2 class="text-center font-bold text-2xl"> Smarty Programs </h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-screen-xl mx-auto  p-6">
+                    <!-- card-1 -->
+                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+                        <a > <i class="fa-solid fa-child-dress bg-orange-500 text-white border p-4 rounded-full  "></i> </a>
+                        <h2 class="text-2xl"> Toddler </h2>
+                        <p>(1,5 - 3 years) </p>
+                        <p>By creating a safe, consistent and welcoming environment, we help </p>
+                     </div>
+                    <!-- card 2 -->
+                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+                        <a > <i class="fa-solid fa-graduation-cap bg-orange-500 text-white border p-4 rounded-full"></i> </a>
+                        <h2 class="text-2xl"> Preschool </h2>
+                        <p>(2 - 3 years) </p>
+                        <p>By creating a safe, consistent and welcoming environment, we help </p>
+                     </div>
+                    <!-- card 3 -->
+                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+                        <a > <i class="fa-solid fa-car bg-orange-500 text-white border p-4 rounded-full"></i></i> </a>
+                        <h2 class="text-2xl"> Kindergarten </h2>
+                        <p>(3 - 4 years) </p>
+                        <p>By creating a safe, consistent and welcoming environment, we help </p>
+                     </div>
+                    <!-- card 4 -->
+                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+                        <a > <i class="fa-solid fa-person-chalkboard bg-orange-500 text-white border p-4 rounded-full"></i> </a>
+                        <h2 class="text-2xl"> Pre-k Program </h2>
+                        <p>(5 - 3 years) </p>
+                        <p>By creating a safe, consistent and welcoming environment, we help </p>
+                     </div>
+                   
+
+                </div>
+         </section>
+         <!-- our core value  -->
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+  </body>
+</html>
