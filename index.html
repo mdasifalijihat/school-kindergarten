@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>smarty kindergarten</title>
-    <!-- daisy ui  cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/a55bd9149b.js" crossorigin="anonymous"></script>
-    <!--  -->
-  </head>
-  <body>
-    <header class="bg-orange-500">
-      <nav class="container mx-auto text-white">
-        <div class="navbar">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-              <li><a>About Us</a></li>
-              <li><a>Programs</a></li>
-              <li><a>Classes</a></li>
-              <li><a>News</a></li>
-              <li><a>Events</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Contacts</a></li>
-              </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>smarty kindergarten</title>
+  <!-- daisy ui  cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a55bd9149b.js" crossorigin="anonymous"></script>
+  <!--  -->
+</head>
+
+<body>
+  <header class="bg-orange-500">
+    <nav class="container mx-auto text-white">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <a class="hover:text-black text-sm md:text-2xl"
-              >Smart kindergarten</a
-            >
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li><a>About Us</a></li>
               <li><a>Programs</a></li>
               <li><a>Classes</a></li>
@@ -65,239 +35,308 @@
               <li><a>Contacts</a></li>
             </ul>
           </div>
-          <div class="navbar-end space-x-4">
-            <a class="hover:bg-orange-500"> 
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <i class="fa-solid fa-cart-shopping "></i>
+          <a class="hover:text-black text-sm md:text-2xl">Smart kindergarten</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About Us</a></li>
+            <li><a>Programs</a></li>
+            <li><a>Classes</a></li>
+            <li><a>News</a></li>
+            <li><a>Events</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Contacts</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-4">
+          <a class="hover:bg-orange-500">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <i class="fa-solid fa-cart-shopping "></i>
+        </div>
+      </div>
+    </nav>
+    <!-- nav banner -->
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center container mx-auto gap-4 md:gap-24">
+      <!-- text section -->
+      <div class="space-y-4 mx-12 my-12 text-white">
+        <h2 class="text-xl  font-bold"> When should I begin to look at schools?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam commodi in fugit repellendus, dignissimos
+          numquam obcaecati, maiores cumque tempora odio aliquam quo veniam asperiores labore sit aut dolore. Excepturi.
+        </p>
+        <button class="btn bg-blue-600 text-white"> Learn more </button>
+      </div>
+      <!-- images section -->
+      <div class="my-12">
+        <img class="w-[450px] h-[300px] md:h-[400px]" src="images/slide_img.png" alt="">
+      </div>
+
+    </div>
+  </header>
+  <!-- main section -->
+  <main class="container mx-auto">
+    <!-- smart programs -->
+    <section class="my-24">
+      <h2 class="text-center font-bold text-2xl"> Smarty Programs </h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-screen-xl mx-auto  p-6">
+        <!-- card-1 -->
+        <div
+          class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+          <a> <i class="fa-solid fa-child-dress bg-orange-500 text-white border p-4 rounded-full  "></i> </a>
+          <h2 class="text-2xl"> Toddler </h2>
+          <p>(1,5 - 3 years) </p>
+          <p>By creating a safe, consistent and welcoming environment, we help </p>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+          <a> <i class="fa-solid fa-graduation-cap bg-orange-500 text-white border p-4 rounded-full"></i> </a>
+          <h2 class="text-2xl"> Preschool </h2>
+          <p>(2 - 3 years) </p>
+          <p>By creating a safe, consistent and welcoming environment, we help </p>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+          <a> <i class="fa-solid fa-car bg-orange-500 text-white border p-4 rounded-full"></i></i> </a>
+          <h2 class="text-2xl"> Kindergarten </h2>
+          <p>(3 - 4 years) </p>
+          <p>By creating a safe, consistent and welcoming environment, we help </p>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
+          <a> <i class="fa-solid fa-person-chalkboard bg-orange-500 text-white border p-4 rounded-full"></i> </a>
+          <h2 class="text-2xl"> Pre-k Program </h2>
+          <p>(5 - 3 years) </p>
+          <p>By creating a safe, consistent and welcoming environment, we help </p>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- our core value  -->
+    <section class="my-24">
+      <h3 class="text-center font-bold text-3xl font-serif"> Our core values </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 mt-12 gap-6 max-w-screen-xl mx-auto">
+        <!-- card 1 -->
+        <div class="flex p-4 gap-6 justify-center items-center shadow">
+          <img class="w-24 rounded-full shadow" src="images/gallery5-450x450.jpg" alt="">
+          <div>
+            <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
+            <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
           </div>
         </div>
-      </nav>
-      <!-- nav banner -->
-       <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center container mx-auto gap-4 md:gap-24">
-        <!-- text section -->
-         <div class="space-y-4 mx-12 my-12 text-white">
-           <h2 class="text-xl  font-bold"> When should I begin to look at schools?</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam commodi in fugit repellendus, dignissimos numquam obcaecati, maiores cumque tempora odio aliquam quo veniam asperiores labore sit aut dolore. Excepturi.</p>
-           <button class="btn bg-blue-600 text-white"> Learn more </button>
-         </div>
-         <!-- images section -->
-          <div class="my-12">
-            <img class="w-[450px] h-[300px] md:h-[400px]" src="images/slide_img.png" alt="">
+        <!-- card 2 -->
+        <div class="flex p-4 gap-6 justify-center items-center shadow">
+          <img class="w-24 rounded-full shadow" src="images/event3.jpg" alt="">
+          <div>
+            <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
+            <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
           </div>
-        
-       </div>
-    </header>
-    <!-- main section -->
-    <main class="container mx-auto">
-        <!-- smart programs -->
-         <section class="my-24">
-                <h2 class="text-center font-bold text-2xl"> Smarty Programs </h2>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-screen-xl mx-auto  p-6">
-                    <!-- card-1 -->
-                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
-                        <a > <i class="fa-solid fa-child-dress bg-orange-500 text-white border p-4 rounded-full  "></i> </a>
-                        <h2 class="text-2xl"> Toddler </h2>
-                        <p>(1,5 - 3 years) </p>
-                        <p>By creating a safe, consistent and welcoming environment, we help </p>
-                     </div>
-                    <!-- card 2 -->
-                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
-                        <a > <i class="fa-solid fa-graduation-cap bg-orange-500 text-white border p-4 rounded-full"></i> </a>
-                        <h2 class="text-2xl"> Preschool </h2>
-                        <p>(2 - 3 years) </p>
-                        <p>By creating a safe, consistent and welcoming environment, we help </p>
-                     </div>
-                    <!-- card 3 -->
-                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
-                        <a > <i class="fa-solid fa-car bg-orange-500 text-white border p-4 rounded-full"></i></i> </a>
-                        <h2 class="text-2xl"> Kindergarten </h2>
-                        <p>(3 - 4 years) </p>
-                        <p>By creating a safe, consistent and welcoming environment, we help </p>
-                     </div>
-                    <!-- card 4 -->
-                     <div class="flex flex-col justify-center p-4 space-y-4 w-[262px] h-[310px] border shadow rounded-md transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-orange-300">
-                        <a > <i class="fa-solid fa-person-chalkboard bg-orange-500 text-white border p-4 rounded-full"></i> </a>
-                        <h2 class="text-2xl"> Pre-k Program </h2>
-                        <p>(5 - 3 years) </p>
-                        <p>By creating a safe, consistent and welcoming environment, we help </p>
-                     </div>
-                   
+        </div>
+        <!-- card 3 -->
+        <div class="flex p-4 gap-6 justify-center items-center shadow">
+          <img class="w-24 rounded-full shadow" src="images/event4.jpg" alt="">
+          <div>
+            <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
+            <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="flex p-4 gap-6 justify-center items-center shadow">
+          <img class="w-24 rounded-full shadow" src="images/gallery9-390x390.jpg" alt="">
+          <div>
+            <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
+            <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
+          </div>
+        </div>
 
-                </div>
-         </section>
-         <!-- our core value  -->
-          <section class="my-24">
-            <h3 class="text-center font-bold text-3xl font-serif"> Our core values </h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 mt-12 gap-6 max-w-screen-xl mx-auto">
-                <!-- card 1 -->
-                 <div class="flex p-4 gap-6 justify-center items-center shadow">
-                    <img class="w-24 rounded-full shadow" src="images/gallery5-450x450.jpg" alt="">
-                    <div> 
-                         <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
-                        <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
-                    </div>
-                 </div>
-                <!-- card 2 -->
-                 <div class="flex p-4 gap-6 justify-center items-center shadow">
-                    <img class="w-24 rounded-full shadow" src="images/event3.jpg" alt="">
-                    <div> 
-                         <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
-                        <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
-                    </div>
-                 </div>
-                <!-- card 3 -->
-                 <div class="flex p-4 gap-6 justify-center items-center shadow">
-                    <img class="w-24 rounded-full shadow" src="images/event4.jpg" alt="">
-                    <div> 
-                         <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
-                        <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
-                    </div>
-                 </div>
-                <!-- card 4 -->
-                 <div class="flex p-4 gap-6 justify-center items-center shadow">
-                    <img class="w-24 rounded-full shadow" src="images/gallery9-390x390.jpg" alt="">
-                    <div> 
-                         <h2 class="text-3xl font-bold font-mono pb-2">Healthy Meals</h2>
-                        <p>Prissy expectant involuntarily limpet until cobra less dear so overabundant contagion</p>
-                    </div>
-                 </div>
+      </div>
+
+    </section>
+    <!-- events  -->
+    <section class="my-24 bg-blue-600 ">
+      <h2 class="text-center text-3xl font-mono p-12 text-white "> Events </h2>
+      <!-- card section -->
+      <div class="grid grid-cols-1 md:grid-cols-2  gap-6 max-w-screen-xl mx-auto py-12">
+        <!-- card 1 -->
+        <div
+          class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg ">
+          <img class="w-40 rounded-xl" src="images/event2.jpg" alt="">
+          <div class="space-y-2">
+            <p class="bg-orange-400 p-2 rounded-xl w-32"> 15 April 4:30pm</p>
+            <h2 class="font-bold text-2xl"> Father`s Day Sundaes & Shaving! </h2>
+            <p>Discussion and community dialogue with school staff, parents and community members.</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg ">
+          <img class="w-40 rounded-xl" src="images/event3.jpg" alt="">
+          <div class="space-y-2">
+            <p class="bg-orange-400 p-2 rounded-xl w-32 md:w-[210px]"> 16 Oct 8:00 am to 9:00 pm</p>
+            <h2 class="font-bold text-2xl"> Last Day of School end of Year Picnic </h2>
+            <p>The school PTFA would like to invite you to enjoy an evening of Pasta and Prosecco in November.</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg">
+          <img class="w-40 rounded-xl" src="images/event4.jpg" alt="">
+          <div class="space-y-2">
+            <p class="bg-orange-400 p-2 rounded-xl w-32"> 15 April 4:30pm</p>
+            <h2 class="font-bold text-2xl"> Halloween Bash Lorem ipsum </h2>
+            <p>Year 6 pupils are invited to join us for a Taster Day on either Thursday 19th or Sunday 22nd.</p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg">
+          <img class="w-40 rounded-xl" src="images/classes6-350x190.jpg" alt="">
+          <div class="space-y-2">
+            <p class="bg-orange-400 p-2 rounded-xl w-32"> 15 April 4:30pm</p>
+            <h2 class="font-bold text-2xl"> Last Day of School end of Year Picnic </h2>
+            <p>Our activities will challenge and develop your child’s creativity, imagination and social skills.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- classes -->
+    <section class="my-24">
+      <h2 class="text-center text-3xl font-bold my-8">Classes</h2>
+      <!-- card section  -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-screen-xl mx-auto">
+        <!-- card 1 -->
+        <div class="w-[360px] h-[400px] border shadow-md rounded-md">
+          <img class="w-full" src="images/classes2-350x190.jpg" alt="">
+          <h2 class="text-center font-bold text-xl py-2 text-blue-600"> Alphabet Matching Class </h2>
+          <p class="text-center"> we provide 4 classes with 9 to 12 children earch aged 12 months to 5</p>
+          <div class="divider divider divider-start"></div>
+          <div class="flex gap-12 mx-8">
+            <div class="flex flex-col justify-center items-center">
+              <p> Age </p>
+              <p class="text-orange-500">2-3 years</p>
 
             </div>
+            <div class="flex flex-col justify-center items-center">
+              <p> Size </p>
+              <p class="text-orange-500">11 seats</p>
 
-          </section>
-          <!-- events  -->
-           <section class="my-24 bg-blue-600 ">
-            <h2 class="text-center text-3xl font-mono p-12 text-white "> Events </h2>
-            <!-- card section -->
-                <div class="grid grid-cols-1 md:grid-cols-2  gap-6 max-w-screen-xl mx-auto py-12">
-                    <!-- card 1 -->
-                     <div class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg ">
-                        <img class="w-40 rounded-xl" src="images/event2.jpg" alt="">
-                        <div class="space-y-2">
-                            <p class="bg-orange-400 p-2 rounded-xl w-32"> 15 April 4:30pm</p>
-                            <h2 class="font-bold text-2xl"> Father`s Day Sundaes & Shaving! </h2>
-                            <p>Discussion and community dialogue with school staff, parents and community members.</p>
-                        </div>
-                     </div>
-                    <!-- card 2 -->
-                     <div class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg ">
-                        <img class="w-40 rounded-xl" src="images/event3.jpg" alt="">
-                        <div class="space-y-2">
-                            <p class="bg-orange-400 p-2 rounded-xl w-32 md:w-[210px]"> 16 Oct 8:00 am to 9:00 pm</p>
-                            <h2 class="font-bold text-2xl"> Last Day of School end of Year Picnic </h2>
-                            <p>The school PTFA would like to invite you to enjoy an evening of Pasta and Prosecco in November.</p>
-                        </div>
-                     </div>
-                    <!-- card 3 -->
-                     <div class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg">
-                        <img class="w-40 rounded-xl" src="images/event4.jpg" alt="">
-                        <div class="space-y-2">
-                            <p class="bg-orange-400 p-2 rounded-xl w-32"> 15 April 4:30pm</p>
-                            <h2 class="font-bold text-2xl"> Halloween Bash Lorem ipsum </h2>
-                            <p>Year 6 pupils are invited to join us for a Taster Day on either Thursday 19th or Sunday 22nd.</p>
-                        </div>
-                     </div>
-                    <!-- card 4 -->
-                     <div class="flex justify-start items-center gap-6 p-2 text-white shadow-xl transition-transform duration-150 transform hover:scale-105 hover:shadow-lg">
-                        <img class="w-40 rounded-xl" src="images/classes6-350x190.jpg" alt="">
-                        <div class="space-y-2">
-                            <p class="bg-orange-400 p-2 rounded-xl w-32"> 15 April 4:30pm</p>
-                            <h2 class="font-bold text-2xl"> Last Day of School end of Year Picnic </h2>
-                            <p>Our activities will challenge and develop your child’s creativity, imagination and social skills.</p>
-                        </div>
-                     </div>
-
-                </div>
-           </section>
-
-           <!-- classes -->
-            <section class="my-24"> 
-                <h2 class="text-center text-3xl font-bold my-8">Classes</h2>
-                <!-- card section  -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-screen-xl mx-auto">
-                    <!-- card 1 -->
-                     <div class="w-[360px] h-[400px] border shadow-md rounded-md">
-                    <img class="w-full" src="images/classes2-350x190.jpg" alt="">
-                    <h2 class="text-center font-bold text-xl py-2 text-blue-600"> Alphabet Matching Class </h2>
-                    <p class="text-center"> we provide 4 classes with 9 to 12 children earch aged 12 months to 5</p>
-                    <div class="divider divider divider-start"></div>
-                    <div class="flex gap-12 mx-8">
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Age </p>
-                            <p class="text-orange-500">2-3 years</p>
-                            
-                        </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Size </p>
-                            <p class="text-orange-500">11 seats</p>
-                           
-                        </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Price </p>
-                            <p class="text-orange-500">$25/hour</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <p> Price </p>
+              <p class="text-orange-500">$25/hour</p>
+            </div>
+          </div>
 
 
-                     </div>
-                    <!-- card 2 -->
-                     <div class="w-[360px] h-[400px] border shadow-md rounded-md">
-                    <img class="w-full" src="images/classes3-350x190.jpg" alt="">
-                    <h2 class="text-center font-bold text-xl py-2 text-blue-600"> Letter Match Class </h2>
-                    <p class="text-center"> we provide 4 classes with 9 to 12 children earch aged 12 months to 5</p>
-                    <div class="divider divider divider-start"></div>
-                    <div class="flex gap-12 mx-8">
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Age </p>
-                            <p class="text-orange-500">2-3 years</p>
-                            
-                        </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Size </p>
-                            <p class="text-orange-500">11 seats</p>
-                           
-                        </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Price </p>
-                            <p class="text-orange-500">$25/hour</p>
-                        </div>
-                    </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-[360px] h-[400px] border shadow-md rounded-md">
+          <img class="w-full" src="images/classes3-350x190.jpg" alt="">
+          <h2 class="text-center font-bold text-xl py-2 text-blue-600"> Letter Match Class </h2>
+          <p class="text-center"> we provide 4 classes with 9 to 12 children earch aged 12 months to 5</p>
+          <div class="divider divider divider-start"></div>
+          <div class="flex gap-12 mx-8">
+            <div class="flex flex-col justify-center items-center">
+              <p> Age </p>
+              <p class="text-orange-500">2-3 years</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <p> Size </p>
+              <p class="text-orange-500">11 seats</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <p> Price </p>
+              <p class="text-orange-500">$25/hour</p>
+            </div>
+          </div>
 
 
-                     </div>
-                    <!-- card 3 -->
-                     <div class="w-[360px] h-[400px] border shadow-md rounded-md">
-                    <img class="w-full" src="images/classes4-350x190.jpg" alt="">
-                    <h2 class="text-center font-bold text-xl py-2 text-blue-600"> Spanish Language Class </h2>
-                    <p class="text-center"> we provide 4 classes with 9 to 12 children earch aged 12 months to 5</p>
-                    <div class="divider divider divider-start"></div>
-                    <div class="flex gap-12 mx-8">
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Age </p>
-                            <p class="text-orange-500">2-3 years</p>
-                            
-                        </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Size </p>
-                            <p class="text-orange-500">11 seats</p>
-                           
-                        </div>
-                        <div class="flex flex-col justify-center items-center">
-                            <p> Price </p>
-                            <p class="text-orange-500">$25/hour</p>
-                        </div>
-                    </div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-[360px] h-[400px] border shadow-md rounded-md">
+          <img class="w-full" src="images/classes4-350x190.jpg" alt="">
+          <h2 class="text-center font-bold text-xl py-2 text-blue-600"> Spanish Language Class </h2>
+          <p class="text-center"> we provide 4 classes with 9 to 12 children earch aged 12 months to 5</p>
+          <div class="divider divider divider-start"></div>
+          <div class="flex gap-12 mx-8">
+            <div class="flex flex-col justify-center items-center">
+              <p> Age </p>
+              <p class="text-orange-500">2-3 years</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <p> Size </p>
+              <p class="text-orange-500">11 seats</p>
+
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <p> Price </p>
+              <p class="text-orange-500">$25/hour</p>
+            </div>
+          </div>
 
 
-                     </div>
-                </div>
-            </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- smarty kindergarden -->
+
+    <section class="my-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center max-w-screen-xl mx-auto">
+        <!-- text section -->
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold">Smarty Kindergarden
+          </h2>
+          <p>Our philosophy is learning through play as we offer a stimulating environment for children. Our philosophy
+            is learning through play as we offer a stimulating environment for children.
+
+            Slow-carb meh whatever, succulents dreamcatcher health goth bushwick schlitz woke. Cred 3 wolf moon tattooed
+            four loko, hashtag tote bag pabst messenger bag single-origin coffee activated charcoal kale chips vape
+            tousled crucifix kitsch. Stumptown jianbing shoreditch hexagon selvage etsy celiac poke everyday carry
+            cold-pressed single-origin coffee mixtape mustache.</p>
+            <button class="btn bg-orange-500 text-white"> Learn more <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <!-- card section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-screen-md mx-auto mt-8 md:mt-0">
+          <!-- card 1 -->
+           <div class="w-[207px] h-[252px] flex flex-col rounded border justify-center items-center shadow-lg">
+            <i class="fa-solid fa-sun bg-orange-600 p-6 text-white rounded-full"></i>
+            <h2 class="text-4xl text-center py-2 font-bold"> Full Day Sessions </h2>
+           </div>
+          <!-- card 2 -->
+           <div class="w-[207px] h-[252px] flex flex-col rounded border justify-center items-center shadow-lg">
+            <i class="fa-solid fa-signal bg-orange-600 p-6 text-white rounded-full"></i>
+            <h2 class="text-4xl text-center py-2 font-bold"> Online Access </h2>
+           </div>
+          <!-- card 3 -->
+           <div class="w-[207px] h-[252px] flex flex-col rounded border justify-center items-center shadow-lg">
+            <i class="fa-solid fa-people-roof bg-orange-600 p-6 text-white rounded-full"></i>
+            <h2 class="text-4xl text-center py-2 font-bold"> Varied Classes </h2>
+           </div>
+          <!-- card 4 -->
+           <div class="w-[207px] h-[252px] flex flex-col rounded border justify-center items-center shadow-lg">
+            <i class="fa-solid fa-user-group bg-orange-600 p-6 text-white rounded-full"></i>
+            <h2 class="text-4xl text-center py-2 font-bold"> Friendly Place</h2>
+           </div>
+
+        </div>
+
+      </div>
+    </section>
 
 
-    </main>
+  </main>
 
-    <!-- footer -->
-    <footer></footer>
-  </body>
+  <!-- footer -->
+  <footer></footer>
+</body>
+
 </html>
